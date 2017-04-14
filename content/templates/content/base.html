@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/content.css'%}">
+    <title>R.C.Otero</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a href="{% url 'home'%}">Hello</a></li>
+                <li><a href="{% url 'backgd'%}">Background</a></li>
+                <li><a href="{% url 'projs'%}">Projects</a></li>
+                <li><a href="{% url 'contact'%}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="circle">
+            <img src="{% static 'images/wingslogo.png'%}" id="logo"/>
+        </div>
+        <h1 id="brand">Rebeca Otero</h1>
+    </div>
+
+    <div class="divide"></div>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
