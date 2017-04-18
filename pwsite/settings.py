@@ -25,7 +25,7 @@ SECRET_KEY = 'haaa0#km6&&96s+tf!-@m__wfp1s$_p17d0*fgtjp6-#_5#ze='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['rcotero.pythonanywhere.com']
 
 
 # Application definition
